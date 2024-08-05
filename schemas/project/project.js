@@ -93,10 +93,20 @@ const summaryField = defineField({
 })
 
 const contentField = defineField({
-  title: 'Content',
-  name: 'content',
+  title: '프로젝트 내용',
+  name: 'contents',
   type: 'array',
-  of: [{type: 'block'}],
+  of: [
+    {
+      type: 'block',
+    },
+    {
+      type: 'image',
+    },
+    {
+      type: 'code',
+    },
+  ],
 })
 
 const imagesField = defineField({
