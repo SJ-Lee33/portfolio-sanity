@@ -9,10 +9,7 @@ export const skills = [
   'React',
   'JavaScript',
   'TypeScript',
-
-  'Swift',
   'Kotlin',
-  'SQL',
 
   'Sanity',
   'Cloudinary',
