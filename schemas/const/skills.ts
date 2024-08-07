@@ -20,7 +20,7 @@ export const skills = [
   'Adobe Photoshop',
   'Adobe Illustrator',
   'Adobe Preimiere Pro',
-  'Adobe After Effect',
+  'Adobe After Effects',
 
   'Unity',
 ]
