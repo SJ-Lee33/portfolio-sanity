@@ -1,5 +1,5 @@
 export const skills = [
-  'C',
+  'C/C++',
   'C#',
   'Java',
   'Python',
@@ -17,10 +17,10 @@ export const skills = [
   'AWS',
 
   'Figma',
-  'Photoshop',
-  'Illustrator',
-  'Preimiere Pro',
-  'AfterEffects',
+  'Adobe Photoshop',
+  'Adobe Illustrator',
+  'Adobe Preimiere Pro',
+  'Adobe After Effect',
 
   'Unity',
 ]
