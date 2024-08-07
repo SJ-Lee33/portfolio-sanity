@@ -1,6 +1,6 @@
 export const skills = [
   'C',
-  'C#',
+  'CSharp',
   'Java',
   'Python',
 
