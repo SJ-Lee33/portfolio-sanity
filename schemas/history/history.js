@@ -7,12 +7,12 @@ const yearField = defineField({
   options: {
     list: [
       {title: '이전', value: 0},
-      {title: '2019', value: 1},
-      {title: '2020', value: 2},
-      {title: '2021', value: 3},
-      {title: '2022', value: 4},
-      {title: '2023', value: 5},
-      {title: '2024', value: 6},
+      {title: '2019', value: 2019},
+      {title: '2020', value: 2020},
+      {title: '2021', value: 2021},
+      {title: '2022', value: 2022},
+      {title: '2023', value: 2023},
+      {title: '2024', value: 2024},
     ],
   },
   validation: (Rule) => Rule.required(),
