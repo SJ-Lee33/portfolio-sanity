@@ -116,6 +116,40 @@ const imagesField = defineField({
   of: [{type: 'image'}],
 })
 
+const relatedProjectsField = defineField({
+  title: '관련 프로젝트',
+  description: '관련 있는 프로젝트 리스트',
+  name: 'relatedProjects',
+  type: 'array',
+  of: [
+    {
+      type: 'object',
+      fields: [
+        {
+          title: '관련 프로젝트',
+          name: 'reference',
+          type: 'reference',
+          to: [{type: 'project'}],
+          options: {
+            disableNew: true, // 새로운 문서 생성을 비활성화
+          },
+        },
+      ],
+      preview: {
+        select: {
+          title: 'reference.title',
+        },
+        prepare(selection) {
+          const {title} = selection
+          return {
+            title: title || '제목 없음', // 제목이 없을 경우 '제목 없음'으로 표시
+          }
+        },
+      },
+    },
+  ],
+})
+
 export default defineType({
   title: '프로젝트',
   name: 'project',
@@ -136,6 +170,7 @@ export default defineType({
     contentField,
 
     imagesField,
+    relatedProjectsField,
   ],
   preview: {
     select: {
