@@ -109,6 +109,69 @@ const contentField = defineField({
   ],
 })
 
+const troubleShootingsField = defineField({
+  title: '트러블 슈팅',
+  name: 'troubleShootings',
+  description: '문제와 솔루션을 기입하는 란',
+  type: 'array',
+  of: [
+    {
+      title: '문제와 솔루션',
+      name: 'troubleShooting',
+      type: 'document',
+
+      fields: [
+        {
+          title: '구분',
+          name: 'troubleShootingType',
+          type: 'number',
+          options: {
+            list: [
+              {title: '문제', value: 0},
+              {title: '해결', value: 1},
+            ],
+          },
+        },
+        {
+          title: '제목',
+          name: 'troubleShootingTitle',
+          type: 'string',
+        },
+        {
+          title: '내용',
+          name: 'troubleShootingContent',
+          type: 'array',
+          of: [
+            {
+              type: 'block',
+            },
+            {
+              type: 'image',
+            },
+            {
+              type: 'code',
+            },
+          ],
+        },
+      ],
+
+      preview: {
+        select: {
+          type: 'troubleShootingType',
+          title: 'troubleShootingTitle',
+        },
+        prepare(selection) {
+          let {type, title} = selection
+          type = type === 0 ? '문제' : '해결'
+          return {
+            title: `${type} : ${title}`,
+          }
+        },
+      },
+    },
+  ],
+})
+
 const imagesField = defineField({
   title: '추가 이미지들',
   name: 'images',
@@ -168,6 +231,7 @@ export default defineType({
 
     summaryField,
     contentField,
+    troubleShootingsField,
 
     imagesField,
     relatedProjectsField,
