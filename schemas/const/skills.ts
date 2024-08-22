@@ -10,6 +10,9 @@ export const skills = [
   'JavaScript',
   'TypeScript',
   'Kotlin',
+  'Styled Components',
+  'Tailwind CSS',
+  'Recoil',
 
   'Sanity',
   'Cloudinary',
