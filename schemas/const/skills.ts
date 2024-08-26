@@ -5,7 +5,6 @@ export const skills = [
   'Python',
 
   'HTML',
-  'CSS',
   'React',
   'React Native',
   'Expo',
@@ -13,6 +12,7 @@ export const skills = [
   'JavaScript',
   'TypeScript',
   'Kotlin',
+  'CSS',
   'Styled Components',
   'Tailwind CSS',
   'Recoil',
