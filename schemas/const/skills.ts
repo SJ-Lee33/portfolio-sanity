@@ -7,6 +7,8 @@ export const skills = [
   'HTML',
   'CSS',
   'React',
+  'React Native',
+  'Expo',
   'Next.js',
   'JavaScript',
   'TypeScript',
