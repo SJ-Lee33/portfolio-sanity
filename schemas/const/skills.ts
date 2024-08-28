@@ -25,7 +25,7 @@ export const skills = [
   'Figma',
   'Adobe Photoshop',
   'Adobe Illustrator',
-  'Adobe Preimiere Pro',
+  'Adobe Premiere Pro',
   'Adobe After Effects',
 
   'Unity',
