@@ -12,6 +12,7 @@ export const skills = [
   'JavaScript',
   'TypeScript',
   'Kotlin',
+  'Flutter',
   'CSS',
   'Styled Components',
   'Tailwind CSS',
