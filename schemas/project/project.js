@@ -97,7 +97,7 @@ const summaryField = defineField({
 
 const contentOverviewField = defineField({
   title: '프로젝트 개요',
-  name: 'overview',
+  name: 'contentOverview',
   type: 'array',
   of: [
     {
@@ -114,7 +114,7 @@ const contentOverviewField = defineField({
 
 const contentContributionField = defineField({
   title: '프로젝트 기여',
-  name: 'contribution',
+  name: 'contentContribution',
   type: 'array',
   of: [
     {
@@ -131,7 +131,7 @@ const contentContributionField = defineField({
 
 const contentSkillField = defineField({
   title: '사용 기술',
-  name: 'skillDetail',
+  name: 'contentSkill',
   type: 'array',
   of: [
     {
@@ -148,7 +148,7 @@ const contentSkillField = defineField({
 
 const contentReflectionField = defineField({
   title: '느낀점 및 재고',
-  name: 'reflection',
+  name: 'contentReflection',
   type: 'array',
   of: [
     {
@@ -162,6 +162,7 @@ const contentReflectionField = defineField({
     },
   ],
 })
+
 const troubleShootingsField = defineField({
   title: '트러블 슈팅',
   name: 'troubleShootings',
