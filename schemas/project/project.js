@@ -131,7 +131,7 @@ const contentContributionField = defineField({
 
 const contentSkillField = defineField({
   title: '사용 기술',
-  name: 'skill',
+  name: 'skillDetail',
   type: 'array',
   of: [
     {
