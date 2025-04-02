@@ -68,9 +68,9 @@ const contributionField = defineField({
   validation: (Rule) => Rule.required(),
 })
 
-const releaseDateField = defineField({
-  title: '프로젝트 출시 년도',
-  name: 'releaseDate',
+const startDateField = defineField({
+  title: '프로젝트 시작일',
+  name: 'startDate',
   type: 'date',
   options: {
     dateFormat: 'YYYY-MM',
@@ -78,11 +78,14 @@ const releaseDateField = defineField({
   },
 })
 
-const durationField = defineField({
-  title: '프로젝트 개발 기간',
-  name: 'duration',
-  type: 'string',
-  description: '1년, 1년 2개월',
+const releaseDateField = defineField({
+  title: '프로젝트 출시일',
+  name: 'releaseDate',
+  type: 'date',
+  options: {
+    dateFormat: 'YYYY-MM',
+    calendarTodayLabel: 'Today',
+  },
 })
 
 const summaryField = defineField({
@@ -225,9 +228,8 @@ export default defineType({
     thumbnailField,
     roleField,
     contributionField,
-
+    startDateField,
     releaseDateField,
-    durationField,
 
     summaryField,
     contentField,
