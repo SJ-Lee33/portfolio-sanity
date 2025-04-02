@@ -95,9 +95,9 @@ const summaryField = defineField({
   description: '리스트에 표시될 요약 설명, 어미 없어도 됨.',
 })
 
-const contentField = defineField({
-  title: '프로젝트 내용',
-  name: 'contents',
+const contentOverviewField = defineField({
+  title: '프로젝트 개요',
+  name: 'overview',
   type: 'array',
   of: [
     {
@@ -112,6 +112,56 @@ const contentField = defineField({
   ],
 })
 
+const contentContributionField = defineField({
+  title: '프로젝트 기여',
+  name: 'contribution',
+  type: 'array',
+  of: [
+    {
+      type: 'block',
+    },
+    {
+      type: 'image',
+    },
+    {
+      type: 'code',
+    },
+  ],
+})
+
+const contentSkillField = defineField({
+  title: '사용 기술',
+  name: 'skill',
+  type: 'array',
+  of: [
+    {
+      type: 'block',
+    },
+    {
+      type: 'image',
+    },
+    {
+      type: 'code',
+    },
+  ],
+})
+
+const contentReflectionField = defineField({
+  title: '느낀점 및 재고',
+  name: 'reflection',
+  type: 'array',
+  of: [
+    {
+      type: 'block',
+    },
+    {
+      type: 'image',
+    },
+    {
+      type: 'code',
+    },
+  ],
+})
 const troubleShootingsField = defineField({
   title: '트러블 슈팅',
   name: 'troubleShootings',
@@ -232,7 +282,11 @@ export default defineType({
     releaseDateField,
 
     summaryField,
-    contentField,
+
+    contentOverviewField,
+    contentContributionField,
+    contentSkillField,
+    contentReflectionField,
     troubleShootingsField,
 
     imagesField,
