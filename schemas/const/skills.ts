@@ -4,6 +4,8 @@ export const skills = [
   'Java',
   'Python',
 
+  'PyTorch',
+
   'HTML',
   'React',
   'React Native',
