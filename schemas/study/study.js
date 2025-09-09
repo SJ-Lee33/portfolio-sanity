@@ -84,11 +84,18 @@ const learningInsightField = defineField({
   title: '아쉬움과 인사이트',
   name: 'learningInsight',
   description: '아려웠던 점, 부족했던 점, 교훈, 인사이트',
-  type: 'date',
-  options: {
-    dateFormat: 'YYYY-MM',
-    calendarTodayLabel: 'Today',
-  },
+  type: 'array',
+  of: [
+    {
+      type: 'block',
+    },
+    {
+      type: 'image',
+    },
+    {
+      type: 'code',
+    },
+  ],
 })
 
 const learningPlanField = defineField({
