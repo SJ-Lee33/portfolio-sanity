@@ -74,7 +74,6 @@ const startDateField = defineField({
   type: 'date',
   options: {
     dateFormat: 'YYYY-MM',
-    calendarTodayLabel: 'Today',
   },
 })
 
@@ -84,7 +83,6 @@ const releaseDateField = defineField({
   type: 'date',
   options: {
     dateFormat: 'YYYY-MM',
-    calendarTodayLabel: 'Today',
   },
 })
 

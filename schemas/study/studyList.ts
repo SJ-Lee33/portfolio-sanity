@@ -66,7 +66,7 @@ const startDateField = defineField({
   type: 'date',
   options: {
     dateFormat: 'YYYY-MM',
-    calendarTodayLabel: 'Today',
+    // calendarTodayLabel: 'Today',
   },
 })
 
@@ -76,14 +76,14 @@ const endDateField = defineField({
   type: 'date',
   options: {
     dateFormat: 'YYYY-MM',
-    calendarTodayLabel: 'Today',
+    // calendarTodayLabel: 'Today',
   },
 })
 
 const studyListField = defineField({
   title: '학습 기록',
   description: '공부 포스팅 리스트',
-  name: 'studyList',
+  name: 'relatedStudies',
   type: 'array',
   of: [
     {
